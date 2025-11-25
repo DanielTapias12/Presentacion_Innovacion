@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
 
 export const getGeminiClient = () => {
-  return new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
+  return new GoogleGenAI({ apiKey: process.env.API_KEY });
 };
