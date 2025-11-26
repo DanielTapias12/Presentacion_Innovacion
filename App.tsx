@@ -94,36 +94,36 @@ const App: React.FC = () => {
           
           {/* SLIDE 0: INTRO */}
           {currentSlide === 0 && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-8 animate-pop overflow-y-auto pt-16 md:pt-28 bg-white/40">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-8 animate-pop overflow-y-auto">
               
-              <div className="animate-float mb-6 md:mb-12 mt-auto md:mt-0 flex-shrink-0">
+              <div className="animate-float mb-8 md:mb-12 mt-auto md:mt-0">
                 {/* LARGE LOGO */}
                 <Logo 
                   layout="vertical" 
-                  iconSize="w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-72 lg:h-72" 
-                  textSize="text-4xl sm:text-5xl md:text-7xl lg:text-8xl" 
+                  iconSize="w-40 h-40 md:w-64 md:h-64 lg:w-72 lg:h-72" 
+                  textSize="text-5xl md:text-7xl lg:text-8xl" 
                 />
               </div>
               
-              <div className="space-y-4 mb-8 flex-shrink-0">
-                 <span className="px-3 py-1 md:px-4 md:py-1.5 bg-blue-100 text-blue-700 rounded-full text-xs md:text-sm lg:text-base font-bold uppercase tracking-wider shadow-sm border border-blue-200">
+              <div className="space-y-4 mb-8">
+                 <span className="px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm md:text-base font-bold uppercase tracking-wider shadow-sm border border-blue-200">
                     Presentación de Prototipo (MVP)
                  </span>
-                 <h2 className="text-lg md:text-3xl font-medium text-slate-600 px-2">
+                 <h2 className="text-xl md:text-3xl font-medium text-slate-500">
                    Plataforma de Gestión de Ajuste Razonable
                  </h2>
               </div>
 
-              <p className="text-base md:text-xl text-slate-600 max-w-2xl mb-8 md:mb-16 px-4 leading-relaxed flex-shrink-0">
+              <p className="text-lg md:text-xl text-slate-500 max-w-2xl mb-10 md:mb-16 px-4 leading-relaxed">
                 Estrategia integral, presupuesto y modelo de validación 2025.
               </p>
               
               <button 
                 onClick={nextSlide}
-                className="mb-auto md:mb-0 group flex items-center gap-3 px-6 py-3 md:px-10 md:py-5 bg-slate-900 text-white rounded-full font-bold text-base md:text-xl hover:bg-blue-600 transition-all shadow-xl hover:shadow-blue-500/30 hover:scale-105 active:scale-95 flex-shrink-0"
+                className="mb-auto md:mb-0 group flex items-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-slate-900 text-white rounded-full font-bold text-lg md:text-xl hover:bg-blue-600 transition-all shadow-xl hover:shadow-blue-500/30 hover:scale-105 active:scale-95"
               >
                 Iniciar Presentación
-                <Play className="w-5 h-5 md:w-6 md:h-6 fill-current" />
+                <Play className="w-6 h-6 fill-current" />
               </button>
             </div>
           )}
@@ -144,10 +144,10 @@ const App: React.FC = () => {
                   <div className="inline-block p-3 bg-green-100 rounded-2xl mb-2">
                     <ExternalLink className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
                   </div>
-                  <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                     Validar Prototipo
                   </h2>
-                  <p className="text-base md:text-xl text-slate-600 leading-relaxed">
+                  <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
                     Accede a la aplicación en tiempo real. Los datos registrados se sincronizan con la base de datos de pruebas.
                   </p>
                   
